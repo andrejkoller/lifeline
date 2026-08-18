@@ -35,6 +35,8 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: var(--font-geist-sans);
+  font-size: 0.875rem;
 }
 
 /* Enabled after mount to avoid a transition flash on initial theme resolution */
@@ -51,10 +53,15 @@ a {
 
 a:hover {
   color: var(--color-hover);
-  transition: color 0.2s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+svg {
+  color: var(--color-muted);
+  transition: color 0.3s ease-out;
+  cursor: pointer;
 }
 
 svg:hover {
   color: var(--color-hover);
-  transition: color 0.2s ease-out;
 }
