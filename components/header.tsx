@@ -8,7 +8,6 @@ export const Header = () => {
         <div className="flex flex-col items-start">
           {/* SVG Logo coming soon */}
         </div>
-        <div>{/* Theme toggle button coming soon */}</div>
       </div>
     </header>
   );

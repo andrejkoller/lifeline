@@ -1,19 +1,24 @@
 "use client";
 
+import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { ThemeProvider } from "@/components/theme/theme-provider";
 
 export default function ClientLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Header />
-      <main
-        className="grow w-full min-h-screen"
-        aria-label="Main content"
-      >
-        {children}
-      </main>
-    </div>
+    <ThemeProvider>
+      <div className="flex flex-col h-screen overflow-hidden">
+        <Header />
+        <main
+          className="flex flex-col grow w-full min-h-0 overflow-hidden"
+          aria-label="Main content"
+        >
+          {children}
+        </main>
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }

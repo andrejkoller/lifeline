@@ -4,25 +4,25 @@
   --header-height: 4rem;
   --footer-height: 4rem;
 
-  --color-background: rgb(0, 0, 0);
-  --color-foreground: rgb(255, 255, 255);
+  --color-background: rgba(0, 0, 0, 1);
+  --color-foreground: rgba(255, 255, 255, 1);
 
-  --color-muted: rgb(102, 102, 102);
-  --color-primary: rgb(255, 255, 255);
+  --color-muted: rgba(255, 255, 255, 0.2);
+  --color-primary: rgba(255, 255, 255, 1);
   --color-hover: rgba(255, 255, 255, 0.65);
 
-  --color-border: rgb(51, 51, 51);
+  --color-border: rgba(255, 255, 255, 0.1);
 }
 
 [data-theme="light"] {
-  --color-background: rgb(255, 255, 255);
-  --color-foreground: rgb(0, 0, 0);
+  --color-background: rgba(255, 255, 255, 1);
+  --color-foreground: rgba(0, 0, 0, 1);
 
-  --color-muted: rgb(102, 102, 102);
-  --color-primary: rgb(0, 0, 0);
+  --color-muted: rgba(0, 0, 0, 0.2);
+  --color-primary: rgba(0, 0, 0, 1);
   --color-hover: rgba(0, 0, 0, 0.65);
 
-  --color-border: rgb(204, 204, 204);
+  --color-border: rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -35,9 +35,13 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+/* Enabled after mount to avoid a transition flash on initial theme resolution */
+body.theme-transitions {
   transition:
-    background-color 0.2s ease-out,
-    color 0.2s ease-out;
+    background-color 0.3s ease-out,
+    color 0.3s ease-out;
 }
 
 a {
