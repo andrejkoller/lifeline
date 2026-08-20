@@ -3,11 +3,12 @@
 :root {
   --header-height: 4rem;
   --footer-height: 4rem;
+  --layout-max-width: 64rem;
 
   --color-background: rgba(0, 0, 0, 1);
   --color-foreground: rgba(255, 255, 255, 1);
 
-  --color-muted: rgba(255, 255, 255, 0.2);
+  --color-muted: rgba(255, 255, 255, 0.3);
   --color-primary: rgba(255, 255, 255, 1);
   --color-hover: rgba(255, 255, 255, 0.65);
 
@@ -18,7 +19,7 @@
   --color-background: rgba(255, 255, 255, 1);
   --color-foreground: rgba(0, 0, 0, 1);
 
-  --color-muted: rgba(0, 0, 0, 0.2);
+  --color-muted: rgba(0, 0, 0, 0.3);
   --color-primary: rgba(0, 0, 0, 1);
   --color-hover: rgba(0, 0, 0, 0.65);
 
@@ -44,6 +45,12 @@ body.theme-transitions {
   transition:
     background-color 0.3s ease-out,
     color 0.3s ease-out;
+}
+
+.layout-container {
+  max-width: var(--layout-max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 a {

@@ -6,7 +6,7 @@ export const Footer = () => {
       className="h-(--footer-height) w-full border-t border-(--color-border)"
       aria-label="Site footer"
     >
-      <div className="flex items-center justify-between h-full w-full max-w-5xl mx-auto px-6">
+      <div className="layout-container flex items-center justify-between h-full w-full">
         {/* Left side: Theme Switcher */}
         <div className="flex items-center space-x-4">
           <ThemeSwitcher />

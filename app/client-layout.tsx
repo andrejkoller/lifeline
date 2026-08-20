@@ -12,7 +12,7 @@ export default function ClientLayout({
       <div className="flex flex-col h-screen overflow-hidden">
         <Header />
         <main
-          className="flex flex-col grow w-full min-h-0 overflow-hidden"
+          className="layout-container flex flex-col grow w-full min-h-0 overflow-y-auto"
           aria-label="Main content"
         >
           {children}

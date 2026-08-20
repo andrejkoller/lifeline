@@ -7,7 +7,7 @@ export const Header = () => {
       className="flex items-center justify-between h-(--header-height) w-full border-b border-(--color-border)"
       aria-label="Site header"
     >
-      <div className="flex items-center justify-between w-full h-full max-w-5xl mx-auto px-6">
+      <div className="layout-container flex items-center justify-between w-full h-full">
         <div className="flex flex-col items-start">
           {/* SVG Logo coming soon */}
         </div>
